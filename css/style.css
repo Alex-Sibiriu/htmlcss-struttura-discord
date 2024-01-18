@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: arial;
 }
 
  /* GENERALI */
 header {
   background-color: #ADD8E6;
-  padding: 20px 0 0;
 }
 
 footer {
@@ -15,14 +15,13 @@ footer {
 }
 
 section {
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .container {
   width: 60%;
   margin: 0px auto;
-  background-color: #228B22;
-  border: 1px solid black;
+  border: 1px dashed black;
 
   display: flex;
   justify-content: center;
@@ -34,15 +33,23 @@ section {
 }
 
  /* HEADER */
-header .container.nav-container {
-  height: fit-content;
+header .nav-section {
+  padding: 15px 0;
+}
+
+header .logo,
+header .login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header .logo {
   width: 20%;
+  height: 48px;
   text-align: center;
   background-color: yellow;
-  border: 1px solid black;
+  border: 1px dashed black;
   padding: 5px 0;
 }
 
@@ -51,13 +58,15 @@ header nav {
 }
 
 header nav ul {
+  height: 48px;
   list-style: none;
   padding: 5px 0;
   background-color: yellow;
-  border: 1px solid black;
+  border: 1px dashed black;
 
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 header nav ul li a{
@@ -66,9 +75,10 @@ header nav ul li a{
 
 header .login {
   width: 20%;
+  height: 48px;
   text-align: center;
   background-color: yellow;
-  border: 1px solid black;
+  border: 1px dashed black;
 }
 
 header .login .login-btn {
@@ -78,11 +88,10 @@ header .login .login-btn {
 
 .jumbotron {
   background-color: #00008B;
-  padding: 20px 0;
 }
 
 .container.jumbo {
-  width: 40%;
+  width: 45%;
   height: 400px;
   background-color: #EE82EE;
 }
@@ -113,27 +122,34 @@ header .login .login-btn {
  }
 
 .container.big-container {
-  height: 800px;
+  height: 930px;
+  background-color: #228B22;
  }
 
 /* FOOTER */
 .info-box {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px dashed grey;
+  padding: 10px 0 40px;
 }
 
 .info-box .social {
-  height: 400px;
+  height: 600px;
   width: 30%;
   background-color: #F08080;
-  border: 1px solid black;
+  border: 1px dashed black;
+  margin-right: 5px;
 }
 
+.info-box .info-sections {
+  width: 70%;
+  display: flex;
+}
 
 .info-box .info-section {
-  height: 400px;
-  width: 17.5%;
+  height: 600px;
+  width: 25%;
   background-color: #20B2AA;
-  border: 1px solid black;
+  border: 1px dashed white;
 }
 
 footer .cta {
@@ -148,7 +164,7 @@ footer .cta {
 
 footer .cta .logo a,
 footer .cta button {
-  border: 1px solid black;
+  border: 1px dashed black;
   background-color: #FFB6C1;
   padding: 5px 10px;
   cursor: pointer;
