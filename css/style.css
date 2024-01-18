@@ -10,15 +10,19 @@ header {
   padding: 20px 0 0;
 }
 
+footer {
+  background-color: #23272A;
+}
+
 section {
   padding: 30px 0;
 }
 
 .container {
-  width: 70%;
-  height: 400px;
+  width: 60%;
   margin: 0px auto;
   background-color: #228B22;
+  border: 1px solid black;
 
   display: flex;
   justify-content: center;
@@ -39,6 +43,7 @@ header .logo {
   text-align: center;
   background-color: yellow;
   border: 1px solid black;
+  padding: 5px 0;
 }
 
 header nav {
@@ -68,6 +73,7 @@ header .login {
 
 header .login .login-btn {
   padding: 5px 10px;
+  cursor: pointer;
 }
 
 .jumbotron {
@@ -76,35 +82,74 @@ header .login .login-btn {
 }
 
 .container.jumbo {
-  width: 50%;
-  height: 300px;
+  width: 40%;
+  height: 400px;
   background-color: #EE82EE;
 }
 
- /* MAIN */
- .coloured-section {
+/* MAIN */
+.coloured-section {
 
   background-color: #D3D3D3;
- }
+}
 
- .img-container,
- .text-container {
-  height: 100%;
+.img-container,
+.text-container,
+.big-contianer {
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
- }
+}
 
- .img-container {
+.img-container {
   width: 60%;
   background-color: #1E90FF;
  }
 
- .text-container {
+.text-container {
   width: 40%;
   background-color: #FFC0CB;
  }
 
- .container.big-container {
+.container.big-container {
   height: 800px;
  }
+
+/* FOOTER */
+.info-box {
+  border-bottom: 1px solid grey;
+}
+
+.info-box .social {
+  height: 400px;
+  width: 30%;
+  background-color: #F08080;
+  border: 1px solid black;
+}
+
+
+.info-box .info-section {
+  height: 400px;
+  width: 17.5%;
+  background-color: #20B2AA;
+  border: 1px solid black;
+}
+
+footer .cta {
+  width: 100%;
+  height: 50px;
+  background-color: #7FFFD4;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .cta .logo a,
+footer .cta button {
+  border: 1px solid black;
+  background-color: #FFB6C1;
+  padding: 5px 10px;
+  cursor: pointer;
+}
