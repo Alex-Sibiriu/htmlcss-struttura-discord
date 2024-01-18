@@ -4,19 +4,34 @@
   box-sizing: border-box;
 }
 
+ /* GENERALI */
 header {
   background-color: #ADD8E6;
   padding: 20px 0 0;
 }
 
+section {
+  padding: 30px 0;
+}
+
 .container {
   width: 70%;
-  margin: 20px auto;
-  background-color: red;
+  height: 400px;
+  margin: 0px auto;
+  background-color: #228B22;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.coloured-section {
+  background-color: #D3D3D3;
+}
+
+ /* HEADER */
+header .container.nav-container {
+  height: fit-content;
 }
 
 header .logo {
@@ -65,3 +80,31 @@ header .login .login-btn {
   height: 300px;
   background-color: #EE82EE;
 }
+
+ /* MAIN */
+ .coloured-section {
+
+  background-color: #D3D3D3;
+ }
+
+ .img-container,
+ .text-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .img-container {
+  width: 60%;
+  background-color: #1E90FF;
+ }
+
+ .text-container {
+  width: 40%;
+  background-color: #FFC0CB;
+ }
+
+ .container.big-container {
+  height: 800px;
+ }
